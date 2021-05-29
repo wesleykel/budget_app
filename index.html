@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/66ea06ec02.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Personal Expense Tracker</h1>
+
+      <h3>Add a new expense</h3>
+      <div class="details">
+        <form>
+          <label for="name">Item Purchased</label>
+          <input type="text" id="name" />
+
+          <label type="text" id="dropbtn">Payment Method</label>
+          <select id="payment" class="payment-type">
+            <option value="Cash">Cash</option>
+            <option value="Credit card">Credit Card</option>
+            <option value="Debit card">Debit Card</option>
+            <option value="Paypal">Paypal</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="name">Date</label>
+          <input type="date" id="date" />
+
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" />
+        </form>
+
+        <div class="budget">
+          <div class="amspent">Total amount spent</div>
+          <div class="amspent_num"></div>
+        </div>
+      </div>
+      <i id="button" class="fas fa-plus-circle fa-3x"></i>
+      <table>
+        <tr id="firstrow">
+          <th>Date</th>
+          <th>Item Purchase</th>
+          <th>Amount</th>
+
+          <th>Payment method</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
